@@ -11,7 +11,7 @@ export default async function Home({searchParams}) {
   const products = await getProducts(searchParams);
 
   if(products.length === 0){
-    return <NullData title="Oops! No products found. Click 'ALL' to clear filters" />
+    return <NullData title="Oops! No products found. Click 'ALL' to clear filters e-shop" />
   }
 
 
