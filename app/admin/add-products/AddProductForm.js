@@ -123,8 +123,8 @@ const AddProductForm = () => {
 
         await handleImageUploads();
         const productData = {...data, images: uploadedImages};
-        console.log("productData", productData);
 
+        
         axios.post("/api/product", productData).then(() =>{
             toast.success("Product Created");
             setIsProductCreated(true);
